@@ -53,10 +53,69 @@ class _ForcastWeatherState extends State<ForcastWeather> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(),
-            Text('Name of City: $enteredText'),
-            Text('Current Temp: $temperature'),
-            Text('Weather Condition $weather'),
+            Container(
+            
+              width: 400,
+              height: 500,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    const Text('Monday'),
+                    Text(
+                      'Name of City: $enteredText',
+                      
+                    ),
+                    Text('Current Temp: $temperature'),
+                    Text('Weather Condition $weather'),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    const Text('Tuesday'),
+                    Text('Name of City: $enteredText'),
+                    Text('Current Temp: $temperature'),
+                    Text('Weather Condition $weather'),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    const Text('Wednesday'),
+                    Text('Name of City: $enteredText'),
+                    Text('Current Temp: $temperature'),
+                    Text('Weather Condition $weather'),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    const Text('Thursay'),
+                    Text('Name of City: $enteredText'),
+                    Text('Current Temp: $temperature'),
+                    Text('Weather Condition $weather'),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    const Text('Friday'),
+                    Text('Name of City: $enteredText'),
+                    Text('Current Temp: $temperature'),
+                    Text('Weather Condition $weather'),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    const Text('Saturday'),
+                    Text('Name of City: $enteredText'),
+                    Text('Current Temp: $temperature'),
+                    Text('Weather Condition $weather'),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    const Text('Sunday'),
+                    Text('Name of City: $enteredText'),
+                    Text('Current Temp: $temperature'),
+                    Text('Weather Condition $weather'),
+                  ],
+                ),
+              ),
+            ),
             TextField(
               controller: yourController,
               decoration: InputDecoration(
